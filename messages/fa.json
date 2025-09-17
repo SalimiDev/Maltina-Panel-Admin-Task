@@ -2,5 +2,11 @@
   "Home": {
     "title": "خانه",
     "description": "توضیحات خانه"
+  },
+  "UserManagement": {
+    "title": "مدیریت کاربران",
+    "description": "توضیحات مدیریت کاربران",
+    "userList": "لیست کاربران",
+    "addNewUser": "افزودن کاربر جدید"
   }
 }

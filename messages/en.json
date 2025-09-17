@@ -2,5 +2,11 @@
   "Home": {
     "title": "Home",
     "description": "Home description"
+  },
+  "UserManagement": {
+    "title": "User Management",
+    "description": "User Management description",
+    "userList": "User List",
+    "addNewUser": "Add New User"
   }
 }
