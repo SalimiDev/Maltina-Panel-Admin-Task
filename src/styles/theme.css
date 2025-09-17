@@ -1,0 +1,162 @@
+@theme inline {
+  /* Base / core colors */
+  --color-*: initial;
+  --color-white: var(--color-white);
+  --color-black: var(--color-black);
+  --color-transparent: var(--color-transparent);
+  --color-current: var(--color-current);
+
+  /* Semantic/brand aliases */
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-accent-1: var(--accent-1);
+  --color-accent-2: var(--accent-2);
+  --color-accent-3: var(--accent-3);
+  --color-accent-4: var(--accent-4);
+
+  /* status colors */
+  --color-success: var(--success);
+  --color-info: var(--info);
+  --color-warning: var(--warning);
+  --color-danger: var(--danger);
+
+  /* Auto-generated variants */
+  --color-primary-subtle: var(--primary-subtle);
+  --color-primary-hover: var(--primary-hover);
+  --color-primary-active: var(--primary-active);
+  --color-primary-disabled: var(--primary-disabled);
+  --color-primary-foreground: var(--primary-foreground);
+
+  --color-secondary-subtle: var(--secondary-subtle);
+  --color-secondary-hover: var(--secondary-hover);
+  --color-secondary-active: var(--secondary-active);
+  --color-secondary-disabled: var(--secondary-disabled);
+  --color-secondary-foreground: var(--secondary-foreground);
+
+  --color-accent-1-subtle: var(--accent-1-subtle);
+  --color-accent-1-hover: var(--accent-1-hover);
+  --color-accent-1-active: var(--accent-1-active);
+  --color-accent-1-disabled: var(--accent-1-disabled);
+  --color-accent-1-foreground: var(--accent-1-foreground);
+
+  --color-accent-2-subtle: var(--accent-2-subtle);
+  --color-accent-2-hover: var(--accent-2-hover);
+  --color-accent-2-active: var(--accent-2-active);
+  --color-accent-2-disabled: var(--accent-2-disabled);
+  --color-accent-2-foreground: var(--accent-2-foreground);
+
+  --color-accent-3-subtle: var(--accent-3-subtle);
+  --color-accent-3-hover: var(--accent-3-hover);
+  --color-accent-3-active: var(--accent-3-active);
+  --color-accent-3-disabled: var(--accent-3-disabled);
+  --color-accent-3-foreground: var(--accent-3-foreground);
+
+  --color-accent-4-subtle: var(--accent-4-subtle);
+  --color-accent-4-hover: var(--accent-4-hover);
+  --color-accent-4-active: var(--accent-4-active);
+  --color-accent-4-disabled: var(--accent-4-disabled);
+  --color-accent-4-foreground: var(--accent-4-foreground);
+
+  --color-success-subtle: var(--success-subtle);
+  --color-success-hover: var(--success-hover);
+  --color-success-active: var(--success-active);
+  --color-success-disabled: var(--success-disabled);
+  --color-success-foreground: var(--success-foreground);
+
+  --color-info-subtle: var(--info-subtle);
+  --color-info-hover: var(--info-hover);
+  --color-info-active: var(--info-active);
+  --color-info-disabled: var(--info-disabled);
+  --color-info-foreground: var(--info-foreground);
+
+  --color-warning-subtle: var(--warning-subtle);
+  --color-warning-hover: var(--warning-hover);
+  --color-warning-active: var(--warning-active);
+  --color-warning-disabled: var(--warning-disabled);
+  --color-warning-foreground: var(--warning-foreground);
+
+  --color-danger-subtle: var(--danger-subtle);
+  --color-danger-hover: var(--danger-hover);
+  --color-danger-active: var(--danger-active);
+  --color-danger-disabled: var(--danger-disabled);
+  --color-danger-foreground: var(--danger-foreground);
+
+  /* Background colors */
+  --color-page-background: var(--bg-page);
+  --color-surface-background: var(--bg-surface);
+  --color-surface-raised-background: var(--bg-surface-raised);
+
+  /* Text colors */
+  --color-foreground: var(--text-default);
+  --color-subtle-foreground: var(--text-subtle);
+  --color-muted-foreground: var(--text-muted);
+  --color-strong-foreground: var(--text-emphasis);
+  --color-inverse-foreground: var(--text-inverse);
+  --color-disabled-foreground: var(--text-disabled);
+
+  --color-link: var(--text-link);
+  --color-link-hover: var(--text-link-hover);
+
+  /* Gradient */
+  --color-gradient: var(--gradient);
+
+  /* Border Colors */
+  --color-border-default: var(--border-default);
+  --color-border-default-hover: var(--border-default-hover);
+  --color-border-default-disabled: var(--border-default-disabled);
+
+  /* === Radiuses === */
+  --radius-*: initial;
+  --radius-xs: var(--radius-xs);
+  --radius-sm: var(--radius-sm);
+  --radius-md: var(--radius-md);
+  --radius-lg: var(--radius-lg);
+  --radius-xl: var(--radius-xl);
+  --radius-2xl: var(--radius-2xl);
+  --radius-3xl: var(--radius-3xl);
+  --radius-4xl: var(--radius-4xl);
+  --radius-full: var(--radius-full);
+
+  /* Z-index */
+  --z-index-hide: var(--z-index-hide);
+  --z-index-base: var(--z-index-base);
+  --z-index-raised: var(--z-index-raised);
+  --z-index-dropdown: var(--z-index-dropdown);
+  --z-index-sticky: var(--z-index-sticky);
+  --z-index-overlay: var(--z-index-overlay);
+  --z-index-modal: var(--z-index-modal);
+  --z-index-popover: var(--z-index-popover);
+  --z-index-tooltip: var(--z-index-tooltip);
+  --z-index-toast: var(--z-index-toast);
+  --z-index-max: var(--z-index-max);
+
+  /* Typography */
+  --font-size-*: initial;
+  --text-xs: var(--font-size-xs);
+  --text-sm: var(--font-size-sm);
+  --text-base: var(--font-size-md);
+  --text-lg: var(--font-size-lg);
+  --text-xl: var(--font-size-xl);
+  --text-2xl: var(--font-size-2xl);
+  --text-3xl: var(--font-size-3xl);
+  --text-4xl: var(--font-size-4xl);
+  --text-5xl: var(--font-size-5xl);
+  --text-6xl: var(--font-size-6xl);
+  --text-7xl: var(--font-size-7xl);
+  --text-8xl: var(--font-size-8xl);
+  --text-9xl: var(--font-size-9xl);
+
+  --font-weight-*: initial;
+  --font-weight-thin: var(--font-weight-thin);
+  --font-weight-extralight: var(--font-weight-extralight);
+  --font-weight-light: var(--font-weight-light);
+  --font-weight-normal: var(--font-weight-normal);
+  --font-weight-medium: var(--font-weight-medium);
+  --font-weight-semibold: var(--font-weight-semibold);
+  --font-weight-bold: var(--font-weight-bold);
+  --font-weight-extrabold: var(--font-weight-extrabold);
+  --font-weight-black: var(--font-weight-black);
+
+  --font-monospace: var(--font-monospace);
+  --font-sans: var(--font-sans);
+}
