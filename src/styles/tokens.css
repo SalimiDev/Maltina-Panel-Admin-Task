@@ -83,70 +83,222 @@
 
   /* Primary variants */
   --primary-subtle: color-mix(in oklch, var(--primary), transparent var(--mix-subtle));
-  --primary-hover: color-mix(in oklch, var(--primary), var(--mix-darken) var(--mix-hover));
-  --primary-active: color-mix(in oklch, var(--primary), var(--mix-darken) var(--mix-active));
-  --primary-disabled: color-mix(in oklch, var(--primary), var(--mix-disabled-color) var(--mix-disabled));
-  --primary-foreground: color-mix(in oklch, var(--primary), var(--mix-lighten) var(--mix-foreground));
+  --primary-hover: color-mix(
+    in oklch,
+    var(--primary),
+    var(--mix-darken) var(--mix-hover)
+  );
+  --primary-active: color-mix(
+    in oklch,
+    var(--primary),
+    var(--mix-darken) var(--mix-active)
+  );
+  --primary-disabled: color-mix(
+    in oklch,
+    var(--primary),
+    var(--mix-disabled-color) var(--mix-disabled)
+  );
+  --primary-foreground: color-mix(
+    in oklch,
+    var(--primary),
+    var(--mix-lighten) var(--mix-foreground)
+  );
 
   /* Secondary variants */
-  --secondary-subtle: color-mix(in oklch, var(--secondary), transparent var(--mix-subtle));
-  --secondary-hover: color-mix(in oklch, var(--secondary), var(--mix-darken) var(--mix-hover));
-  --secondary-active: color-mix(in oklch, var(--secondary), var(--mix-darken) var(--mix-active));
-  --secondary-disabled: color-mix(in oklch, var(--secondary), var(--mix-disabled-color) var(--mix-disabled));
-  --secondary-foreground: color-mix(in oklch, var(--secondary), var(--mix-lighten) var(--mix-foreground));
+  --secondary-subtle: color-mix(
+    in oklch,
+    var(--secondary),
+    transparent var(--mix-subtle)
+  );
+  --secondary-hover: color-mix(
+    in oklch,
+    var(--secondary),
+    var(--mix-darken) var(--mix-hover)
+  );
+  --secondary-active: color-mix(
+    in oklch,
+    var(--secondary),
+    var(--mix-darken) var(--mix-active)
+  );
+  --secondary-disabled: color-mix(
+    in oklch,
+    var(--secondary),
+    var(--mix-disabled-color) var(--mix-disabled)
+  );
+  --secondary-foreground: color-mix(
+    in oklch,
+    var(--secondary),
+    var(--mix-lighten) var(--mix-foreground)
+  );
 
   /* Accent 1 variants */
   --accent-1-subtle: color-mix(in oklch, var(--accent-1), transparent var(--mix-subtle));
-  --accent-1-hover: color-mix(in oklch, var(--accent-1), var(--mix-darken) var(--mix-hover));
-  --accent-1-active: color-mix(in oklch, var(--accent-1), var(--mix-darken) var(--mix-active));
-  --accent-1-disabled: color-mix(in oklch, var(--accent-1), var(--mix-disabled-color) var(--mix-disabled));
-  --accent-1-foreground: color-mix(in oklch, var(--accent-1), var(--mix-lighten) var(--mix-foreground));
+  --accent-1-hover: color-mix(
+    in oklch,
+    var(--accent-1),
+    var(--mix-darken) var(--mix-hover)
+  );
+  --accent-1-active: color-mix(
+    in oklch,
+    var(--accent-1),
+    var(--mix-darken) var(--mix-active)
+  );
+  --accent-1-disabled: color-mix(
+    in oklch,
+    var(--accent-1),
+    var(--mix-disabled-color) var(--mix-disabled)
+  );
+  --accent-1-foreground: color-mix(
+    in oklch,
+    var(--accent-1),
+    var(--mix-lighten) var(--mix-foreground)
+  );
 
   /* Accent 2 variants */
   --accent-2-subtle: color-mix(in oklch, var(--accent-2), transparent var(--mix-subtle));
-  --accent-2-hover: color-mix(in oklch, var(--accent-2), var(--mix-darken) var(--mix-hover));
-  --accent-2-active: color-mix(in oklch, var(--accent-2), var(--mix-darken) var(--mix-active));
-  --accent-2-disabled: color-mix(in oklch, var(--accent-2), var(--mix-disabled-color) var(--mix-disabled));
-  --accent-2-foreground: color-mix(in oklch, var(--accent-2), var(--mix-lighten) var(--mix-foreground));
+  --accent-2-hover: color-mix(
+    in oklch,
+    var(--accent-2),
+    var(--mix-darken) var(--mix-hover)
+  );
+  --accent-2-active: color-mix(
+    in oklch,
+    var(--accent-2),
+    var(--mix-darken) var(--mix-active)
+  );
+  --accent-2-disabled: color-mix(
+    in oklch,
+    var(--accent-2),
+    var(--mix-disabled-color) var(--mix-disabled)
+  );
+  --accent-2-foreground: color-mix(
+    in oklch,
+    var(--accent-2),
+    var(--mix-lighten) var(--mix-foreground)
+  );
 
   /* Accent 3 variants */
   --accent-3-subtle: color-mix(in oklch, var(--accent-3), transparent var(--mix-subtle));
-  --accent-3-hover: color-mix(in oklch, var(--accent-3), var(--mix-darken) var(--mix-hover));
-  --accent-3-active: color-mix(in oklch, var(--accent-3), var(--mix-darken) var(--mix-active));
-  --accent-3-disabled: color-mix(in oklch, var(--accent-3), var(--mix-disabled-color) var(--mix-disabled));
-  --accent-3-foreground: color-mix(in oklch, var(--accent-3), var(--mix-lighten) var(--mix-foreground));
+  --accent-3-hover: color-mix(
+    in oklch,
+    var(--accent-3),
+    var(--mix-darken) var(--mix-hover)
+  );
+  --accent-3-active: color-mix(
+    in oklch,
+    var(--accent-3),
+    var(--mix-darken) var(--mix-active)
+  );
+  --accent-3-disabled: color-mix(
+    in oklch,
+    var(--accent-3),
+    var(--mix-disabled-color) var(--mix-disabled)
+  );
+  --accent-3-foreground: color-mix(
+    in oklch,
+    var(--accent-3),
+    var(--mix-lighten) var(--mix-foreground)
+  );
 
   /* Accent 4 variants */
   --accent-4-subtle: color-mix(in oklch, var(--accent-4), transparent var(--mix-subtle));
-  --accent-4-hover: color-mix(in oklch, var(--accent-4), var(--mix-darken) var(--mix-hover));
-  --accent-4-active: color-mix(in oklch, var(--accent-4), var(--mix-darken) var(--mix-active));
-  --accent-4-disabled: color-mix(in oklch, var(--accent-4), var(--mix-disabled-color) var(--mix-disabled));
-  --accent-4-foreground: color-mix(in oklch, var(--accent-4), var(--mix-lighten) var(--mix-foreground));
+  --accent-4-hover: color-mix(
+    in oklch,
+    var(--accent-4),
+    var(--mix-darken) var(--mix-hover)
+  );
+  --accent-4-active: color-mix(
+    in oklch,
+    var(--accent-4),
+    var(--mix-darken) var(--mix-active)
+  );
+  --accent-4-disabled: color-mix(
+    in oklch,
+    var(--accent-4),
+    var(--mix-disabled-color) var(--mix-disabled)
+  );
+  --accent-4-foreground: color-mix(
+    in oklch,
+    var(--accent-4),
+    var(--mix-lighten) var(--mix-foreground)
+  );
 
   /* Status color variants */
   --success-subtle: color-mix(in oklch, var(--success), transparent var(--mix-subtle));
-  --success-hover: color-mix(in oklch, var(--success), var(--mix-darken) var(--mix-hover));
-  --success-active: color-mix(in oklch, var(--success), var(--mix-darken) var(--mix-active));
-  --success-disabled: color-mix(in oklch, var(--success), var(--mix-disabled-color) var(--mix-disabled));
-  --success-foreground: color-mix(in oklch, var(--success), var(--mix-lighten) var(--mix-foreground));
+  --success-hover: color-mix(
+    in oklch,
+    var(--success),
+    var(--mix-darken) var(--mix-hover)
+  );
+  --success-active: color-mix(
+    in oklch,
+    var(--success),
+    var(--mix-darken) var(--mix-active)
+  );
+  --success-disabled: color-mix(
+    in oklch,
+    var(--success),
+    var(--mix-disabled-color) var(--mix-disabled)
+  );
+  --success-foreground: color-mix(
+    in oklch,
+    var(--success),
+    var(--mix-lighten) var(--mix-foreground)
+  );
 
   --info-subtle: color-mix(in oklch, var(--info), transparent var(--mix-subtle));
   --info-hover: color-mix(in oklch, var(--info), var(--mix-darken) var(--mix-hover));
   --info-active: color-mix(in oklch, var(--info), var(--mix-darken) var(--mix-active));
-  --info-disabled: color-mix(in oklch, var(--info), var(--mix-disabled-color) var(--mix-disabled));
-  --info-foreground: color-mix(in oklch, var(--info), var(--mix-lighten) var(--mix-foreground));
+  --info-disabled: color-mix(
+    in oklch,
+    var(--info),
+    var(--mix-disabled-color) var(--mix-disabled)
+  );
+  --info-foreground: color-mix(
+    in oklch,
+    var(--info),
+    var(--mix-lighten) var(--mix-foreground)
+  );
 
   --warning-subtle: color-mix(in oklch, var(--warning), transparent var(--mix-subtle));
-  --warning-hover: color-mix(in oklch, var(--warning), var(--mix-darken) var(--mix-hover));
-  --warning-active: color-mix(in oklch, var(--warning), var(--mix-darken) var(--mix-active));
-  --warning-disabled: color-mix(in oklch, var(--warning), var(--mix-disabled-color) var(--mix-disabled));
-  --warning-foreground: color-mix(in oklch, var(--warning), var(--mix-lighten) var(--mix-foreground));
+  --warning-hover: color-mix(
+    in oklch,
+    var(--warning),
+    var(--mix-darken) var(--mix-hover)
+  );
+  --warning-active: color-mix(
+    in oklch,
+    var(--warning),
+    var(--mix-darken) var(--mix-active)
+  );
+  --warning-disabled: color-mix(
+    in oklch,
+    var(--warning),
+    var(--mix-disabled-color) var(--mix-disabled)
+  );
+  --warning-foreground: color-mix(
+    in oklch,
+    var(--warning),
+    var(--mix-lighten) var(--mix-foreground)
+  );
 
   --danger-subtle: color-mix(in oklch, var(--danger), transparent var(--mix-subtle));
   --danger-hover: color-mix(in oklch, var(--danger), var(--mix-darken) var(--mix-hover));
-  --danger-active: color-mix(in oklch, var(--danger), var(--mix-darken) var(--mix-active));
-  --danger-disabled: color-mix(in oklch, var(--danger), var(--mix-disabled-color) var(--mix-disabled));
-  --danger-foreground: color-mix(in oklch, var(--danger), var(--mix-lighten) var(--mix-foreground));
+  --danger-active: color-mix(
+    in oklch,
+    var(--danger),
+    var(--mix-darken) var(--mix-active)
+  );
+  --danger-disabled: color-mix(
+    in oklch,
+    var(--danger),
+    var(--mix-disabled-color) var(--mix-disabled)
+  );
+  --danger-foreground: color-mix(
+    in oklch,
+    var(--danger),
+    var(--mix-lighten) var(--mix-foreground)
+  );
 
   /* Background Colors */
   --bg-page: var(--neutral-200);
@@ -230,8 +382,11 @@
   --font-weight-black: 900;
 
   /* === Font Families === */
-  --font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-monospace:
+    SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --font-sans:
+    ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+    sans-serif;
 }
 
 /* ===== DARK THEME ===== */
@@ -254,7 +409,11 @@
   --text-subtle: var(--neutral-400);
   --text-muted: var(--neutral-600);
   --text-inverse: var(--neutral-900);
-  --text-link-hover: color-mix(in oklch, var(--primary), var(--mix-lighten) var(--mix-hover));
+  --text-link-hover: color-mix(
+    in oklch,
+    var(--primary),
+    var(--mix-lighten) var(--mix-hover)
+  );
 
   /* Border Colors */
   --border-default: var(--neutral-700);
@@ -262,34 +421,106 @@
   --border-default-disabled: var(--neutral-400);
 
   /* Override variants for dark theme (lighter mixing) */
-  --primary-hover: color-mix(in oklch, var(--primary), var(--mix-lighten) var(--mix-hover));
-  --primary-active: color-mix(in oklch, var(--primary), var(--mix-lighten) var(--mix-active));
-  --primary-disabled: color-mix(in oklch, var(--primary), var(--mix-disabled-color) var(--mix-disabled));
+  --primary-hover: color-mix(
+    in oklch,
+    var(--primary),
+    var(--mix-lighten) var(--mix-hover)
+  );
+  --primary-active: color-mix(
+    in oklch,
+    var(--primary),
+    var(--mix-lighten) var(--mix-active)
+  );
+  --primary-disabled: color-mix(
+    in oklch,
+    var(--primary),
+    var(--mix-disabled-color) var(--mix-disabled)
+  );
 
-  --secondary-hover: color-mix(in oklch, var(--secondary), var(--mix-lighten) var(--mix-hover));
-  --secondary-active: color-mix(in oklch, var(--secondary), var(--mix-lighten) var(--mix-active));
+  --secondary-hover: color-mix(
+    in oklch,
+    var(--secondary),
+    var(--mix-lighten) var(--mix-hover)
+  );
+  --secondary-active: color-mix(
+    in oklch,
+    var(--secondary),
+    var(--mix-lighten) var(--mix-active)
+  );
 
-  --accent-1-hover: color-mix(in oklch, var(--accent-1), var(--mix-lighten) var(--mix-hover));
-  --accent-1-active: color-mix(in oklch, var(--accent-1), var(--mix-lighten) var(--mix-active));
+  --accent-1-hover: color-mix(
+    in oklch,
+    var(--accent-1),
+    var(--mix-lighten) var(--mix-hover)
+  );
+  --accent-1-active: color-mix(
+    in oklch,
+    var(--accent-1),
+    var(--mix-lighten) var(--mix-active)
+  );
 
-  --accent-2-hover: color-mix(in oklch, var(--accent-2), var(--mix-lighten) var(--mix-hover));
-  --accent-2-active: color-mix(in oklch, var(--accent-2), var(--mix-lighten) var(--mix-active));
+  --accent-2-hover: color-mix(
+    in oklch,
+    var(--accent-2),
+    var(--mix-lighten) var(--mix-hover)
+  );
+  --accent-2-active: color-mix(
+    in oklch,
+    var(--accent-2),
+    var(--mix-lighten) var(--mix-active)
+  );
 
-  --accent-3-hover: color-mix(in oklch, var(--accent-3), var(--mix-lighten) var(--mix-hover));
-  --accent-3-active: color-mix(in oklch, var(--accent-3), var(--mix-lighten) var(--mix-active));
+  --accent-3-hover: color-mix(
+    in oklch,
+    var(--accent-3),
+    var(--mix-lighten) var(--mix-hover)
+  );
+  --accent-3-active: color-mix(
+    in oklch,
+    var(--accent-3),
+    var(--mix-lighten) var(--mix-active)
+  );
 
-  --accent-4-hover: color-mix(in oklch, var(--accent-4), var(--mix-lighten) var(--mix-hover));
-  --accent-4-active: color-mix(in oklch, var(--accent-4), var(--mix-lighten) var(--mix-active));
+  --accent-4-hover: color-mix(
+    in oklch,
+    var(--accent-4),
+    var(--mix-lighten) var(--mix-hover)
+  );
+  --accent-4-active: color-mix(
+    in oklch,
+    var(--accent-4),
+    var(--mix-lighten) var(--mix-active)
+  );
 
-  --success-hover: color-mix(in oklch, var(--success), var(--mix-lighten) var(--mix-hover));
-  --success-active: color-mix(in oklch, var(--success), var(--mix-lighten) var(--mix-active));
+  --success-hover: color-mix(
+    in oklch,
+    var(--success),
+    var(--mix-lighten) var(--mix-hover)
+  );
+  --success-active: color-mix(
+    in oklch,
+    var(--success),
+    var(--mix-lighten) var(--mix-active)
+  );
 
   --info-hover: color-mix(in oklch, var(--info), var(--mix-lighten) var(--mix-hover));
   --info-active: color-mix(in oklch, var(--info), var(--mix-lighten) var(--mix-active));
 
-  --warning-hover: color-mix(in oklch, var(--warning), var(--mix-lighten) var(--mix-hover));
-  --warning-active: color-mix(in oklch, var(--warning), var(--mix-lighten) var(--mix-active));
+  --warning-hover: color-mix(
+    in oklch,
+    var(--warning),
+    var(--mix-lighten) var(--mix-hover)
+  );
+  --warning-active: color-mix(
+    in oklch,
+    var(--warning),
+    var(--mix-lighten) var(--mix-active)
+  );
 
   --danger-hover: color-mix(in oklch, var(--danger), var(--mix-lighten) var(--mix-hover));
-  --danger-active: color-mix(in oklch, var(--danger), var(--mix-lighten) var(--mix-active));
+  --danger-active: color-mix(
+    in oklch,
+    var(--danger),
+    var(--mix-lighten) var(--mix-active)
+  );
 }

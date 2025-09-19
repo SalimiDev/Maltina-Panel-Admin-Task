@@ -1,12 +1,72 @@
 {
   "Home": {
     "title": "خانه",
-    "description": "توضیحات خانه"
+    "description": "توضیحات خانه",
+    "mainPage": "صفحه اصلی"
   },
   "UserManagement": {
     "title": "مدیریت کاربران",
     "description": "توضیحات مدیریت کاربران",
     "userList": "لیست کاربران",
-    "addNewUser": "افزودن کاربر جدید"
+    "addNewUser": "افزودن کاربر جدید",
+    "table": {
+      "columns": ["عکس", "نام", "ایمیل", "تلفن", "شهر", "عملیات"]
+    },
+    "errors": {
+      "fetchFailed": "خطا در دریافت کاربران از سرور",
+      "reconnectMessage": "شما همچنان می‌توانید کاربران جدید اضافه کنید تا ما سعی در اتصال مجدد داریم.",
+      "nameRequired": "نام الزامی است",
+      "emailRequired": "ایمیل الزامی است",
+      "invalidEmail": "فرمت ایمیل نامعتبر است",
+      "cityRequired": "شهر الزامی است"
+    },
+    "actions": {
+      "retry": "تلاش مجدد",
+      "details": "جزئیات",
+      "delete": "حذف"
+    },
+    "filters": {
+      "searchPlaceholder": "جستجو بر اساس نام یا ایمیل",
+      "selectCity": "انتخاب شهر",
+      "noCitiesFound": "هیچ شهری یافت نشد",
+      "sortByCity": "مرتب‌سازی بر اساس شهر"
+    },
+    "form": {
+      "nameLabel": "نام *",
+      "emailLabel": "ایمیل *",
+      "cityLabel": "شهر *",
+      "namePlaceholder": "نام را وارد کنید",
+      "emailPlaceholder": "ایمیل را وارد کنید",
+      "cityPlaceholder": "شهر را وارد کنید",
+      "addUserButton": "افزودن کاربر"
+    },
+    "modal": {
+      "userDetails": "جزئیات کاربر",
+      "contactInformation": "اطلاعات تماس",
+      "noPhoneProvided": "شماره تلفن ارائه نشده",
+      "address": "آدرس",
+      "noAddressAvailable": "آدرس در دسترس نیست",
+      "companyDetails": "جزئیات شرکت",
+      "business": "حوزه کاری:"
+    },
+    "emptyState": {
+      "noUsersFound": "هیچ کاربری یافت نشد",
+      "startByAddingUser": "با افزودن کاربر جدید شروع کنید"
+    }
+  },
+  "Header": {
+    "title": "پنل مدیریت"
+  },
+  "Footer": {
+    "copyright": "© {year} تمام حقوق محفوظ است"
+  },
+  "Pagination": {
+    "showingEntries": "نمایش {startIndex} تا {endIndex} از {totalItems} ورودی",
+    "previous": "قبلی",
+    "next": "بعدی"
+  },
+  "Language": {
+    "english": "English",
+    "persian": "فارسی"
   }
 }

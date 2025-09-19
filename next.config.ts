@@ -5,6 +5,7 @@ import createNextIntlPlugin from "next-intl/plugin";
 const withNextIntl = createNextIntlPlugin("./src/lib/i18n/request.ts");
 
 const nextConfig: NextConfig = {
+  outputFileTracingRoot: path.join(__dirname),
   webpack(config) {
     config.resolve.alias = {
       ...(config.resolve.alias || {}),

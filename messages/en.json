@@ -1,12 +1,72 @@
 {
   "Home": {
     "title": "Home",
-    "description": "Home description"
+    "description": "Home description",
+    "mainPage": "main page"
   },
   "UserManagement": {
     "title": "User Management",
     "description": "User Management description",
     "userList": "User List",
-    "addNewUser": "Add New User"
+    "addNewUser": "Add New User",
+    "table": {
+      "columns": ["Avatar", "Name", "Email", "Phone", "City", "Actions"]
+    },
+    "errors": {
+      "fetchFailed": "Failed to fetch users from the server",
+      "reconnectMessage": "You can still add users locally while we try to reconnect.",
+      "nameRequired": "Name is required",
+      "emailRequired": "Email is required",
+      "invalidEmail": "Invalid email format",
+      "cityRequired": "City is required"
+    },
+    "actions": {
+      "retry": "Retry",
+      "details": "Details",
+      "delete": "Delete"
+    },
+    "filters": {
+      "searchPlaceholder": "Search by name or email",
+      "selectCity": "Select City",
+      "noCitiesFound": "No cities found",
+      "sortByCity": "Sort by city"
+    },
+    "form": {
+      "nameLabel": "Name *",
+      "emailLabel": "Email *",
+      "cityLabel": "City *",
+      "namePlaceholder": "Enter name",
+      "emailPlaceholder": "Enter email",
+      "cityPlaceholder": "Enter city",
+      "addUserButton": "Add User"
+    },
+    "modal": {
+      "userDetails": "User Details",
+      "contactInformation": "Contact Information",
+      "noPhoneProvided": "No phone provided",
+      "address": "Address",
+      "noAddressAvailable": "No address available",
+      "companyDetails": "Company Details",
+      "business": "Business: "
+    },
+    "emptyState": {
+      "noUsersFound": "No users found",
+      "startByAddingUser": "Start by adding new user"
+    }
+  },
+  "Header": {
+    "title": "Admin Panel"
+  },
+  "Footer": {
+    "copyright": "© {year} All rights reserved"
+  },
+  "Pagination": {
+    "showingEntries": "Showing {startIndex} to {endIndex} of {totalItems} entries",
+    "previous": "Previous",
+    "next": "Next"
+  },
+  "Language": {
+    "english": "English",
+    "persian": "فارسی"
   }
 }

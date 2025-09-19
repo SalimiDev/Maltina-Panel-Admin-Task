@@ -1,33 +1,62 @@
 "use client";
 
+import React from "react";
+import { useTranslations } from "next-intl";
+
 type Props = {
-  search: string;
-  city: string;
-  onSearchChange: (value: string) => void;
-  onCityChange: (value: string) => void;
+  searchTerm: string;
+  onSearchChange: (s: string) => void;
+  selectedCity: string;
+  onCityChange: (c: string) => void;
+  cityOptions: string[];
 };
 
-export default function UserListFilters() {
+export default function UserListFilters({
+  searchTerm,
+  selectedCity,
+  cityOptions,
+  onSearchChange,
+  onCityChange,
+}: Props) {
+  const t = useTranslations("UserManagement.filters");
+  const handleSearchChange = (value: string) => {
+    if (value && selectedCity) {
+      onCityChange("");
+    }
+    onSearchChange(value);
+  };
+
+  const handleCityChange = (value: string) => {
+    if (value && searchTerm) {
+      onSearchChange("");
+    }
+    onCityChange(value);
+  };
+
   return (
-    <div className="border-border-default flex w-full gap-4 border-b border-dashed pb-4">
+    <div className="border-border-default flex w-full justify-between gap-4 border-b border-dashed pb-4">
       <input
+        className="border-border-default focus:ring-primary w-1/2 rounded-md border p-2 focus:ring-1 focus:outline-none"
         type="text"
-        placeholder="Search"
-        className="bg-page-background w-1/2 rounded-md p-2"
-        // value={search}
-        // onChange={(e) => onSearchChange(e.target.value)}
+        placeholder={t("searchPlaceholder")}
+        value={searchTerm}
+        onChange={(e) => handleSearchChange(e.target.value)}
       />
       <select
-        title="Select City"
-        className="bg-page-background rounded-md p-2"
-        // value={city}
-        // onChange={(e) => onCityChange(e.target.value)}
+        title={t("selectCity")}
+        className="border-border-default focus:ring-primary [&>option]:bg-page-background text-subtle-foreground rounded-md border p-2 focus:ring-1 focus:outline-none"
+        value={selectedCity}
+        onChange={(e) => handleCityChange(e.target.value)}
+        disabled={cityOptions.length === 0}
       >
-        <option value="">Sort by city</option>
-        <option value="london">London</option>
-        <option value="paris">Paris</option>
-        <option value="tokyo">Tokyo</option>
-        <option value="new york">New York</option>
+        <option value="" disabled hidden>
+          {cityOptions.length === 0 ? t("noCitiesFound") : t("sortByCity")}
+        </option>
+        {cityOptions.map((c) => (
+          <option key={c} value={c}>
+            {c}
+          </option>
+        ))}
       </select>
     </div>
   );

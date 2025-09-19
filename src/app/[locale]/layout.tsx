@@ -1,9 +1,11 @@
 import "../globals.css";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
-import { AppLocale, locales } from "../../lib/i18n/config";
+import { AppLocale, locales } from "@/lib/i18n/config";
+import { routing } from "@/lib/i18n/routing";
 import { notFound } from "next/navigation";
-import { routing } from "../../lib/i18n/routing";
+import Header from "@/components/layout/header";
+import Footer from "@/components/layout/footer";
 
 type Props = {
   children: React.ReactNode;
@@ -26,7 +28,6 @@ export async function generateMetadata(props: Omit<Props, "children">) {
 
 export default async function LocaleLayout({ children, params }: Props) {
   const { locale } = await params;
-
   if (!locales.includes(locale as AppLocale)) {
     notFound();
   }
@@ -41,10 +42,11 @@ export default async function LocaleLayout({ children, params }: Props) {
       className="dark"
       suppressHydrationWarning
     >
-      <body suppressHydrationWarning>
+      <body suppressHydrationWarning className="flex min-h-screen flex-col">
         <NextIntlClientProvider locale={locale} messages={messages}>
-          <header className="p-8 bg-surface-background mx-auto">header</header>
-          <main className="">{children}</main>
+          <Header />
+          <main className="flex-1">{children}</main>
+          <Footer />
         </NextIntlClientProvider>
       </body>
     </html>

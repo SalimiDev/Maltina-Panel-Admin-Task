@@ -1,8 +1,8 @@
 @theme inline {
   /* Base / core colors */
   --color-*: initial;
-  --color-white: var(--color-white);
-  --color-black: var(--color-black);
+  --color-white: var(--mlt-c-white);
+  --color-black: var(--mlt-c-black);
   --color-transparent: var(--color-transparent);
   --color-current: var(--color-current);
 
