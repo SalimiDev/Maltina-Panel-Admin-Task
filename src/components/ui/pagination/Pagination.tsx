@@ -23,6 +23,26 @@ export default function Pagination({
   const t = useTranslations("Pagination");
   if (totalPages <= 1) return null;
 
+  const pages: (number | string)[] = [];
+
+  pages.push(1);
+
+  if (currentPage > 2 && currentPage < totalPages - 1) {
+    pages.push("...");
+  }
+
+  if (currentPage !== 1 && currentPage !== totalPages) {
+    pages.push(currentPage);
+  }
+
+  if (currentPage > 2 && currentPage < totalPages - 1) {
+    pages.push("...");
+  }
+
+  if (totalPages > 1) {
+    pages.push(totalPages);
+  }
+
   return (
     <div className="flex flex-col items-center justify-between gap-4 sm:flex-row sm:items-start">
       <div>
@@ -40,27 +60,22 @@ export default function Pagination({
           {t("previous")}
         </Button>
         <div className="flex items-center gap-1">
-          {Array.from({ length: Math.min(5, totalPages) }, (_, i) => {
-            const pageToShow =
-              totalPages <= 5
-                ? i + 1
-                : currentPage <= 3
-                  ? i + 1
-                  : currentPage >= totalPages - 2
-                    ? totalPages - 4 + i
-                    : currentPage - 2 + i;
-
-            return (
+          {pages.map((p, idx) =>
+            p === "..." ? (
+              <span key={`ellipsis-${idx}`} className="px-2">
+                ...
+              </span>
+            ) : (
               <Button
-                key={pageToShow}
-                onClick={() => onPageChange(pageToShow)}
-                variant={currentPage === pageToShow ? "solid" : "soft"}
+                key={p}
+                onClick={() => onPageChange(p as number)}
+                variant={currentPage === p ? "solid" : "soft"}
                 size="small"
               >
-                {pageToShow}
+                {p}
               </Button>
-            );
-          })}
+            ),
+          )}
         </div>
         <Button
           onClick={() => onPageChange(Math.min(currentPage + 1, totalPages))}
